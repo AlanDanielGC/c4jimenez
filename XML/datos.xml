@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<test>
+    <pregunta id="1">
+    <texto>¿Te interesa resolver problemas matemáticos?</texto>
+    <opciones>
+      <opcion valor="ingenieria">Sí</opcion>
+      <opcion valor="humanidades">No</opcion>
+      <opcion valor="arte">A veces</opcion>
+    </opciones>
+    </pregunta>
+    <pregunta id="2">
+    <texto>¿Te gustaría ayudar a otras personas?</texto>
+    <opciones>
+      <opcion valor="humanidades">Sí</opcion>
+      <opcion valor="ingenieria">No</opcion>
+      <opcion valor="arte">Depende</opcion>
+    </opciones>
+    </pregunta>
+    <pregunta id="3">
+    <texto>¿Te gustaría ayudar a otras personas?</texto>
+    <opciones>
+      <opcion valor="humanidades">Sí</opcion>
+      <opcion valor="ingenieria">No</opcion>
+      <opcion valor="arte">Depende</opcion>
+    </opciones>
+    </pregunta>
+    <pregunta id="4">
+    <texto>¿Te gustaría ayudar a otras personas?</texto>
+    <opciones>
+      <opcion valor="humanidades">Sí</opcion>
+      <opcion valor="ingenieria">No</opcion>
+      <opcion valor="arte">Depende</opcion>
+    </opciones>
+    </pregunta>
+    <pregunta id="5">
+    <texto>¿Te gustaría ayudar a otras personas?</texto>
+    <opciones>
+      <opcion valor="humanidades">Sí</opcion>
+      <opcion valor="ingenieria">No</opcion>
+      <opcion valor="arte">Depende</opcion>
+    </opciones>
+    </pregunta>
+    <pregunta id="6">
+    <texto>¿Te gustaría ayudar a otras personas?</texto>
+    <opciones>
+      <opcion valor="humanidades">Sí</opcion>
+      <opcion valor="ingenieria">No</opcion>
+      <opcion valor="arte">Depende</opcion>
+    </opciones>
+    </pregunta>
+    <pregunta id="7">
+    <texto>¿Te gustaría ayudar a otras personas?</texto>
+    <opciones>
+      <opcion valor="humanidades">Sí</opcion>
+      <opcion valor="ingenieria">No</opcion>
+      <opcion valor="arte">Depende</opcion>
+    </opciones>  
+    </pregunta>
+    <pregunta id="8">
+    <texto>¿Te gustaría ayudar a otras personas?</texto>
+    <opciones>
+      <opcion valor="humanidades">Sí</opcion>
+      <opcion valor="ingenieria">No</opcion>
+      <opcion valor="arte">Depende</opcion>
+    </opciones>
+    </pregunta>
+  
+    <pregunta id="9">
+    <texto>¿Te gustaría ayudar a otras personas?</texto>
+    <opciones>
+      <opcion valor="humanidades">Sí</opcion>
+      <opcion valor="ingenieria">No</opcion>
+      <opcion valor="arte">Depende</opcion>
+    </opciones>
+    </pregunta>
+    <pregunta id="10">
+    <texto>¿Te gustaría ayudar a otras personas?</texto>
+    <opciones>
+      <opcion valor="humanidades">Sí</opcion>
+      <opcion valor="ingenieria">No</opcion>
+      <opcion valor="arte">Depende</opcion>
+    </opciones>
+    </pregunta>
+    <pregunta id="11">
+    <texto>¿Te gustaría ayudar a otras personas?</texto>
+    <opciones>
+      <opcion valor="humanidades">Sí</opcion>
+      <opcion valor="ingenieria">No</opcion>
+      <opcion valor="arte">Depende</opcion>
+    </opciones>
+    </pregunta>
+    <pregunta id="12">
+    <texto>¿Te gustaría ayudar a otras personas?</texto>
+    <opciones>
+      <opcion valor="humanidades">Sí</opcion>
+      <opcion valor="ingenieria">No</opcion>
+      <opcion valor="arte">Depende</opcion>
+    </opciones>
+    </pregunta>
+    <pregunta id="13">
+    <texto>¿Te gustaría ayudar a otras personas?</texto>
+    <opciones>
+      <opcion valor="humanidades">Sí</opcion>
+      <opcion valor="ingenieria">No</opcion>
+      <opcion valor="arte">Depende</opcion>
+    </opciones>
+    </pregunta>
+    <pregunta id="14">
+    <texto>¿Te gustaría ayudar a otras personas?</texto>
+    <opciones>
+      <opcion valor="humanidades">Sí</opcion>
+      <opcion valor="ingenieria">No</opcion>
+      <opcion valor="arte">Depende</opcion>
+    </opciones>
+    </pregunta>
+    <pregunta id="15">
+    <texto>¿Te gustaría ayudar a otras personas?</texto>
+    <opciones>
+      <opcion valor="humanidades">Sí</opcion>
+      <opcion valor="ingenieria">No</opcion>
+      <opcion valor="arte">Depende</opcion>
+    </opciones>
+    </pregunta>
+    <pregunta id="16">
+    <texto>¿Te gustaría ayudar a otras personas?</texto>
+    <opciones>
+      <opcion valor="humanidades">Sí</opcion>
+      <opcion valor="ingenieria">No</opcion>
+      <opcion valor="arte">Depende</opcion>
+    </opciones>
+    </pregunta>
+    <pregunta id="17">
+    <texto>¿Te gustaría ayudar a otras personas?</texto>
+    <opciones>
+      <opcion valor="humanidades">Sí</opcion>
+      <opcion valor="ingenieria">No</opcion>
+      <opcion valor="arte">Depende</opcion>
+    </opciones>
+    </pregunta>
+    <pregunta id="18">
+    <texto>¿Te gustaría ayudar a otras personas?</texto>
+    <opciones>
+      <opcion valor="humanidades">Sí</opcion>
+      <opcion valor="ingenieria">No</opcion>
+      <opcion valor="arte">Depende</opcion>
+    </opciones>
+    </pregunta>
+    <pregunta id="19">
+    <texto>¿Te gustaría ayudar a otras personas?</texto>
+    <opciones>
+      <opcion valor="humanidades">Sí</opcion>
+      <opcion valor="ingenieria">No</opcion>
+      <opcion valor="arte">Depende</opcion>
+    </opciones>
+    </pregunta>
+    <pregunta id="20">
+    <texto>¿Te gustaría ayudar a otras personas?</texto>
+    <opciones>
+      <opcion valor="humanidades">Sí</opcion>
+      <opcion valor="ingenieria">No</opcion>
+      <opcion valor="arte">Depende</opcion>
+    </opciones>
+    </pregunta>
+</test>
