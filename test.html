@@ -2,14 +2,129 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Test Vocacional</title>
-  <link rel="stylesheet" href="css/estilos.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apunta - T | Test Vocacional</title>
+  <!-- Se reutiliza el mismo CSS para mantener coherencia visual -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <h1>Test Vocacional</h1>
-  <div id="contenedor"></div>
-  <button id="siguiente">Siguiente</button>
+  <!-- ===== HEADER ===== -->
+  <!-- Mismo encabezado que en index.html -->
+  <header>
+    <div class="container header-container">
+      <a href="index.html" class="logo">Apunta<span> - T</span></a>
+      <div class="mobile-menu">☰</div>
+      <nav>
+        <ul>
+          <li><a href="index.html#inicio">Inicio</a></li>
+          <li><a href="index.html#orientacion">Orientación</a></li>
+          <li><a href="index.html#test" class="active">Test Vocacional</a></li>
+          <li><a href="index.html#carreras">Carreras</a></li>
+          <li><a href="index.html#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
+  <!-- ===== TEST SECTION ===== -->
+  <section class="section" id="test-vocacional">
+    <div class="container test-container">
+      <h2 class="section-title">Test Vocacional</h2>
+      <p class="section-description">
+        Responde las siguientes preguntas con sinceridad para descubrir tus intereses y habilidades profesionales.
+      </p>
+
+      <!-- Contenedor dinámico del test -->
+      <div id="contenedor" class="test-content">
+        <!-- Aquí el script test.js insertará las preguntas -->
+      </div>
+
+      <!-- Botones de control -->
+      <div class="test-buttons">
+        <button id="siguiente" class="btn btn-accent">Siguiente</button>
+      </div>
+
+      <!-- COMENTARIOS:
+        - Puedes añadir un botón “Anterior” si tu test.js lo soporta.
+        - Usa clases .btn o .btn-accent para mantener el estilo de los botones del sitio.
+      -->
+    </div>
+  </section>
+
+  <!-- ===== RESULTADOS SECTION ===== -->
+  <!-- Esta parte puede mostrarse al final del test -->
+  <section class="section" id="resultados" style="display:none;">
+    <div class="container resultados-container">
+      <h2 class="section-title">Tus Resultados</h2>
+      <div id="resultadoTexto">
+        <!-- Aquí se mostrarán los resultados generados por test.js -->
+      </div>
+      <a href="index.html" class="btn">Volver al inicio</a>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <!-- Se copia el mismo footer para coherencia visual -->
+  <footer>
+    <div class="container">
+      <div class="footer-container">
+        <div class="footer-col">
+          <h3>Apunta - T</h3>
+          <p>Apunta hacia el futuro.</p>
+          <div class="social-links">
+            <a href="#" class="social-link">f</a>
+            <a href="#" class="social-link">t</a>
+            <a href="#" class="social-link">in</a>
+            <a href="#" class="social-link">ig</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3>Enlaces Rápidos</h3>
+          <ul>
+            <li><a href="index.html#inicio">Inicio</a></li>
+            <li><a href="index.html#orientacion">Orientación</a></li>
+            <li><a href="index.html#test">Test Vocacional</a></li>
+            <li><a href="index.html#carreras">Carreras</a></li>
+            <li><a href="index.html#novedades">Novedades</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Recursos</h3>
+          <ul>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Guías de Carrera</a></li>
+            <li><a href="#">Testimonios</a></li>
+            <li><a href="#">Preguntas Frecuentes</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Suscríbete</h3>
+          <p>Recibe novedades y consejos sobre orientación vocacional.</p>
+          <form>
+            <input type="email" class="form-control" placeholder="Tu email" style="margin-bottom: 10px;">
+            <button type="submit" class="btn">Suscribirse</button>
+          </form>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2025 Apunta - T. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== JS SCRIPTS ===== -->
   <script src="js/test.js"></script>
+
+  <script>
+    // ===== Menú móvil =====
+    document.querySelector('.mobile-menu').addEventListener('click', function() {
+      document.querySelector('nav ul').classList.toggle('active');
+    });
+
+    // COMENTARIOS:
+    // - Puedes agregar una barra de progreso aquí usando CSS y JS.
+    // - Considera animaciones suaves al cambiar de pregunta.
+    // - Para mantener la coherencia visual, usa clases de la página principal.
+  </script>
 </body>
 </html>
