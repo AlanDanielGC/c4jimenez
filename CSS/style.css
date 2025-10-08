@@ -480,10 +480,7 @@ nav ul li {
     display: none;
 }
 }
-
-
-=======
-       /* Variables CSS para colores y fuentes */
+  /* Variables CSS para colores y fuentes */
         :root {
             --primary-color: #2c3e50;
             --secondary-color: #3498db;
@@ -970,4 +967,4 @@ nav ul {
                 display: none;
             }
         }
->>>>>>> 6145efa6e77cef6ffed684bc61d4d5a8e20868f4
+
