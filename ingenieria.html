@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingenierías - OrientaTuFuturo</title>
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2c3e50;
+            --accent-color: #e74c3c;
+            --light-color: #ecf0f1;
+            --dark-color: #2c3e50;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 100%);
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .breadcrumb {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+        
+        .breadcrumb a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+        
+        .career-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .career-image {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .career-image img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+        
+        .career-info {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .info-section {
+            margin-bottom: 25px;
+        }
+        
+        .info-section h2 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--light-color);
+        }
+        
+        .info-section p {
+            margin-bottom: 10px;
+        }
+        
+        .universities {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+        
+        .universities h2 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .university-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        
+        .university-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .university-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .university-card h3 {
+            color: var(--secondary-color);
+            margin-bottom: 10px;
+        }
+        
+        .university-card p {
+            margin-bottom: 15px;
+            color: #666;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            background-color: #2980b9;
+            transform: translateY(-2px);
+        }
+        
+        .btn-back {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: var(--secondary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        .btn-back:hover {
+            background-color: #1a252f;
+            transform: translateY(-2px);
+        }
+        
+        .btn-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+        
+        @media (max-width: 768px) {
+            .career-content {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="index.html">Inicio</a> &gt; <a href="index.html#carreras">Carreras</a> &gt; Ingenierías
+        </div>
+        
+        <header>
+            <h1>Ingenierías</h1>
+            <p>Transforma ideas en soluciones que mejoren el mundo</p>
+        </header>
+        
+        <div class="career-content">
+            <div class="career-image">
+                <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Ingeniería">
+            </div>
+            
+            <div class="career-info">
+                <div class="info-section">
+                    <h2>Perfil del Ingeniero</h2>
+                    <p>Un ingeniero es un profesional con capacidad para resolver problemas complejos mediante la aplicación de principios científicos y matemáticos. Desarrolla, diseña y mejora sistemas, procesos y productos que benefician a la sociedad.</p>
+                    <p><strong>Habilidades clave:</strong> Pensamiento analítico, resolución de problemas, creatividad técnica, trabajo en equipo, comunicación efectiva.</p>
+                    <p><strong>Características personales:</strong> Curiosidad, perseverancia, atención al detalle, capacidad de adaptación, ética profesional.</p>
+                </div>
+                
+                <div class="info-section">
+                    <h2>Misión</h2>
+                    <p>Formar profesionales capaces de diseñar, implementar y mejorar sistemas, procesos y tecnologías que resuelvan problemas reales de la sociedad, aplicando conocimientos científicos y técnicos con responsabilidad ética y sostenibilidad.</p>
+                </div>
+                
+                <div class="info-section">
+                    <h2>Visión</h2>
+                    <p>Ser reconocidos como la fuente principal de innovación tecnológica y desarrollo sostenible, contribuyendo al progreso económico y social mediante soluciones ingenieriles de vanguardia que mejoren la calidad de vida a nivel global.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="universities">
+            <h2>Universidades que Ofrecen estas Carreras</h2>
+            <div class="university-list">
+                <div class="university-card">
+                    <h3>UNAM - Universidad Nacional Autónoma de México</h3>
+                    <p>Facultad de Ingeniería ofrece más de 12 especialidades en ingeniería con reconocimiento internacional.</p>
+                    <a href="https://www.ingenieria.unam.mx" class="btn" target="_blank">Visitar Sitio</a>
+                </div>
+                
+                <div class="university-card">
+                    <h3>IPN - Instituto Politécnico Nacional</h3>
+                    <p>Formación de ingenieros con enfoque práctico y tecnológico. Más de 20 carreras de ingeniería disponibles.</p>
+                    <a href="https://www.ipn.mx" class="btn" target="_blank">Visitar Sitio</a>
+                </div>
+                
+                <div class="university-card">
+                    <h3>Tecnológico de Monterrey</h3>
+                    <p>Programas de ingeniería con enfoque innovador y emprendedor. Modelo educativo de vanguardia.</p>
+                    <a href="https://tec.mx" class="btn" target="_blank">Visitar Sitio</a>
+                </div>
+                
+                <div class="university-card">
+                    <h3>UAM - Universidad Autónoma Metropolitana</h3>
+                    <p>Enfoque social de la ingeniería con programas que integran tecnología y desarrollo comunitario.</p>
+                    <a href="https://www.uam.mx" class="btn" target="_blank">Visitar Sitio</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="btn-container">
+            <a href="index.html" class="btn-back">← Volver al Inicio</a>
+        </div>
+    </div>
+</body>
+</html>
