@@ -86,9 +86,14 @@
                     <h3>Analiza</h3>
                     <p>Recibe un informe detallado con tus resultados.</p>
                 </div>
-            </div>
-            
-            <a href="#" class="btn">Comenzar Test</a>
+            </div>         
+            <a href="#" class="btn" id="empezarTest">Comenzar Test</a>
+            <script>
+                document.getElementById("empezarTest").addEventListener("click", function() {
+                // Redirige a la página del test
+                window.location.href = "test.html";
+                });
+             </script>
         </div>
     </section>
 
