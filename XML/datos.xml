@@ -1,164 +1,182 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <test>
-    <pregunta id="1">
+  <pregunta id="1">
     <texto>¿Te interesa resolver problemas matemáticos?</texto>
     <opciones>
       <opcion valor="ingenieria">Sí</opcion>
       <opcion valor="humanidades">No</opcion>
-      <opcion valor="arte">A veces</opcion>
+      <opcion valor="arte">Tal vez</opcion>
     </opciones>
-    </pregunta>
-    <pregunta id="2">
+  </pregunta>
+
+  <pregunta id="2">
     <texto>¿Te gustaría ayudar a otras personas?</texto>
     <opciones>
       <opcion valor="humanidades">Sí</opcion>
       <opcion valor="ingenieria">No</opcion>
-      <opcion valor="arte">Depende</opcion>
+      <opcion valor="arte">Tal vez</opcion>
     </opciones>
-    </pregunta>
-    <pregunta id="3">
-    <texto>¿Te gustaría ayudar a otras personas?</texto>
+  </pregunta>
+
+  <pregunta id="3">
+    <texto>¿Te gusta trabajar con creatividad?</texto>
+    <opciones>
+      <opcion valor="arte">Sí</opcion>
+      <opcion valor="ingenieria">No</opcion>
+      <opcion valor="humanidades">Tal vez</opcion>
+    </opciones>
+  </pregunta>
+
+  <pregunta id="4">
+    <texto>¿Disfrutas aprender cosas nuevas rápidamente?</texto>
+    <opciones>
+      <opcion valor="ingenieria">Sí</opcion>
+      <opcion valor="humanidades">No</opcion>
+      <opcion valor="arte">Tal vez</opcion>
+    </opciones>
+  </pregunta>
+
+  <pregunta id="5">
+    <texto>¿Prefieres trabajar en equipo que solo?</texto>
     <opciones>
       <opcion valor="humanidades">Sí</opcion>
       <opcion valor="ingenieria">No</opcion>
-      <opcion valor="arte">Depende</opcion>
+      <opcion valor="arte">Tal vez</opcion>
     </opciones>
-    </pregunta>
-    <pregunta id="4">
-    <texto>¿Te gustaría ayudar a otras personas?</texto>
+  </pregunta>
+
+  <pregunta id="6">
+    <texto>¿Te interesa la tecnología y la informática?</texto>
+    <opciones>
+      <opcion valor="ingenieria">Sí</opcion>
+      <opcion valor="humanidades">No</opcion>
+      <opcion valor="arte">Tal vez</opcion>
+    </opciones>
+  </pregunta>
+
+  <pregunta id="7">
+    <texto>¿Tienes paciencia para explicar a otros?</texto>
     <opciones>
       <opcion valor="humanidades">Sí</opcion>
       <opcion valor="ingenieria">No</opcion>
-      <opcion valor="arte">Depende</opcion>
+      <opcion valor="arte">Tal vez</opcion>
     </opciones>
-    </pregunta>
-    <pregunta id="5">
-    <texto>¿Te gustaría ayudar a otras personas?</texto>
+  </pregunta>
+
+  <pregunta id="8">
+    <texto>¿Te atraen las artes visuales o música?</texto>
+    <opciones>
+      <opcion valor="arte">Sí</opcion>
+      <opcion valor="ingenieria">No</opcion>
+      <opcion valor="humanidades">Tal vez</opcion>
+    </opciones>
+  </pregunta>
+
+  <pregunta id="9">
+    <texto>¿Te gusta analizar datos y estadísticas?</texto>
+    <opciones>
+      <opcion valor="ingenieria">Sí</opcion>
+      <opcion valor="humanidades">No</opcion>
+      <opcion valor="arte">Tal vez</opcion>
+    </opciones>
+  </pregunta>
+
+  <pregunta id="10">
+    <texto>¿Disfrutas leer y escribir textos largos?</texto>
     <opciones>
       <opcion valor="humanidades">Sí</opcion>
       <opcion valor="ingenieria">No</opcion>
-      <opcion valor="arte">Depende</opcion>
+      <opcion valor="arte">Tal vez</opcion>
     </opciones>
-    </pregunta>
-    <pregunta id="6">
-    <texto>¿Te gustaría ayudar a otras personas?</texto>
+  </pregunta>
+
+  <pregunta id="11">
+    <texto>¿Te interesa la investigación científica?</texto>
+    <opciones>
+      <opcion valor="ingenieria">Sí</opcion>
+      <opcion valor="humanidades">No</opcion>
+      <opcion valor="arte">Tal vez</opcion>
+    </opciones>
+  </pregunta>
+
+  <pregunta id="12">
+    <texto>¿Prefieres trabajos prácticos que teóricos?</texto>
+    <opciones>
+      <opcion valor="ingenieria">Sí</opcion>
+      <opcion valor="humanidades">No</opcion>
+      <opcion valor="arte">Tal vez</opcion>
+    </opciones>
+  </pregunta>
+
+  <pregunta id="13">
+    <texto>¿Te motiva la enseñanza y educación?</texto>
     <opciones>
       <opcion valor="humanidades">Sí</opcion>
       <opcion valor="ingenieria">No</opcion>
-      <opcion valor="arte">Depende</opcion>
+      <opcion valor="arte">Tal vez</opcion>
     </opciones>
-    </pregunta>
-    <pregunta id="7">
-    <texto>¿Te gustaría ayudar a otras personas?</texto>
+  </pregunta>
+
+  <pregunta id="14">
+    <texto>¿Tienes facilidad para dibujar o diseñar?</texto>
+    <opciones>
+      <opcion valor="arte">Sí</opcion>
+      <opcion valor="ingenieria">No</opcion>
+      <opcion valor="humanidades">Tal vez</opcion>
+    </opciones>
+  </pregunta>
+
+  <pregunta id="15">
+    <texto>¿Te gusta resolver problemas complejos?</texto>
+    <opciones>
+      <opcion valor="ingenieria">Sí</opcion>
+      <opcion valor="humanidades">No</opcion>
+      <opcion valor="arte">Tal vez</opcion>
+    </opciones>
+  </pregunta>
+
+  <pregunta id="16">
+    <texto>¿Disfrutas socializar y comunicar ideas?</texto>
     <opciones>
       <opcion valor="humanidades">Sí</opcion>
       <opcion valor="ingenieria">No</opcion>
-      <opcion valor="arte">Depende</opcion>
-    </opciones>  
-    </pregunta>
-    <pregunta id="8">
-    <texto>¿Te gustaría ayudar a otras personas?</texto>
+      <opcion valor="arte">Tal vez</opcion>
+    </opciones>
+  </pregunta>
+
+  <pregunta id="17">
+    <texto>¿Te interesa el desarrollo de software?</texto>
+    <opciones>
+      <opcion valor="ingenieria">Sí</opcion>
+      <opcion valor="humanidades">No</opcion>
+      <opcion valor="arte">Tal vez</opcion>
+    </opciones>
+  </pregunta>
+
+  <pregunta id="18">
+    <texto>¿Te motiva ayudar a la comunidad?</texto>
     <opciones>
       <opcion valor="humanidades">Sí</opcion>
       <opcion valor="ingenieria">No</opcion>
-      <opcion valor="arte">Depende</opcion>
+      <opcion valor="arte">Tal vez</opcion>
     </opciones>
-    </pregunta>
-  
-    <pregunta id="9">
-    <texto>¿Te gustaría ayudar a otras personas?</texto>
+  </pregunta>
+
+  <pregunta id="19">
+    <texto>¿Disfrutas la creatividad en proyectos artísticos?</texto>
     <opciones>
-      <opcion valor="humanidades">Sí</opcion>
+      <opcion valor="arte">Sí</opcion>
       <opcion valor="ingenieria">No</opcion>
-      <opcion valor="arte">Depende</opcion>
+      <opcion valor="humanidades">Tal vez</opcion>
     </opciones>
-    </pregunta>
-    <pregunta id="10">
-    <texto>¿Te gustaría ayudar a otras personas?</texto>
+  </pregunta>
+
+  <pregunta id="20">
+    <texto>¿Te gusta planear y organizar actividades?</texto>
     <opciones>
-      <opcion valor="humanidades">Sí</opcion>
-      <opcion valor="ingenieria">No</opcion>
-      <opcion valor="arte">Depende</opcion>
+      <opcion valor="ingenieria">Sí</opcion>
+      <opcion valor="arte">No</opcion>
+      <opcion valor="humanidades">Tal vez</opcion>
     </opciones>
-    </pregunta>
-    <pregunta id="11">
-    <texto>¿Te gustaría ayudar a otras personas?</texto>
-    <opciones>
-      <opcion valor="humanidades">Sí</opcion>
-      <opcion valor="ingenieria">No</opcion>
-      <opcion valor="arte">Depende</opcion>
-    </opciones>
-    </pregunta>
-    <pregunta id="12">
-    <texto>¿Te gustaría ayudar a otras personas?</texto>
-    <opciones>
-      <opcion valor="humanidades">Sí</opcion>
-      <opcion valor="ingenieria">No</opcion>
-      <opcion valor="arte">Depende</opcion>
-    </opciones>
-    </pregunta>
-    <pregunta id="13">
-    <texto>¿Te gustaría ayudar a otras personas?</texto>
-    <opciones>
-      <opcion valor="humanidades">Sí</opcion>
-      <opcion valor="ingenieria">No</opcion>
-      <opcion valor="arte">Depende</opcion>
-    </opciones>
-    </pregunta>
-    <pregunta id="14">
-    <texto>¿Te gustaría ayudar a otras personas?</texto>
-    <opciones>
-      <opcion valor="humanidades">Sí</opcion>
-      <opcion valor="ingenieria">No</opcion>
-      <opcion valor="arte">Depende</opcion>
-    </opciones>
-    </pregunta>
-    <pregunta id="15">
-    <texto>¿Te gustaría ayudar a otras personas?</texto>
-    <opciones>
-      <opcion valor="humanidades">Sí</opcion>
-      <opcion valor="ingenieria">No</opcion>
-      <opcion valor="arte">Depende</opcion>
-    </opciones>
-    </pregunta>
-    <pregunta id="16">
-    <texto>¿Te gustaría ayudar a otras personas?</texto>
-    <opciones>
-      <opcion valor="humanidades">Sí</opcion>
-      <opcion valor="ingenieria">No</opcion>
-      <opcion valor="arte">Depende</opcion>
-    </opciones>
-    </pregunta>
-    <pregunta id="17">
-    <texto>¿Te gustaría ayudar a otras personas?</texto>
-    <opciones>
-      <opcion valor="humanidades">Sí</opcion>
-      <opcion valor="ingenieria">No</opcion>
-      <opcion valor="arte">Depende</opcion>
-    </opciones>
-    </pregunta>
-    <pregunta id="18">
-    <texto>¿Te gustaría ayudar a otras personas?</texto>
-    <opciones>
-      <opcion valor="humanidades">Sí</opcion>
-      <opcion valor="ingenieria">No</opcion>
-      <opcion valor="arte">Depende</opcion>
-    </opciones>
-    </pregunta>
-    <pregunta id="19">
-    <texto>¿Te gustaría ayudar a otras personas?</texto>
-    <opciones>
-      <opcion valor="humanidades">Sí</opcion>
-      <opcion valor="ingenieria">No</opcion>
-      <opcion valor="arte">Depende</opcion>
-    </opciones>
-    </pregunta>
-    <pregunta id="20">
-    <texto>¿Te gustaría ayudar a otras personas?</texto>
-    <opciones>
-      <opcion valor="humanidades">Sí</opcion>
-      <opcion valor="ingenieria">No</opcion>
-      <opcion valor="arte">Depende</opcion>
-    </opciones>
-    </pregunta>
+  </pregunta>
 </test>
