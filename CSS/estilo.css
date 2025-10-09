@@ -20,8 +20,8 @@ box-sizing: border-box;
 body {
 font-family: var(--font-main);
 line-height: 1.6;
-color: #333;
-background-color: #f9f9f9;
+color: #656464;
+background-color: #ffffff;
 }
 
 a {
@@ -480,36 +480,8 @@ nav ul li {
     display: none;
 }
 }
-  /* Variables CSS para colores y fuentes */
-        :root {
-            --primary-color: #2c3e50;
-            --secondary-color: #3498db;
-            --accent-color: #2ca9c9ff;
-            --light-color: #ecf0f1;
-            --dark-color: #2c3e50;
-            --success-color: #2ecc71;
-            --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        
-        /* Estilos generales */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: var(--font-main);
-            line-height: 1.6;
-            color: #333;
-            background-color: #f9f9f9;
-        }
-        
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-        
+
+
         .container {
             width: 90%;
             max-width: 1200px;
