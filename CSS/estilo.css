@@ -1,5 +1,4 @@
-
-/* Variables CSS para colores y fuentes */
+       /* Variables CSS para colores y fuentes */
 :root {
 --primary-color: #562e52;
 --secondary-color: #ea3abe;
@@ -9,7 +8,6 @@
 --success-color: #df0fbf;
 --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
 /* Estilos generales */
 * {
 margin: 0;
@@ -30,7 +28,7 @@ color: inherit;
 }
 
 .container {
-width: 90%;
+    width: 90%;
 max-width: 1200px;
 margin: 0 auto;
 padding: 0 15px;
@@ -46,6 +44,12 @@ font-weight: 600;
 transition: all 0.3s ease;
 border: none;
 cursor: pointer;
+margin-top: 15px; 
+}
+
+.btn-container {
+    text-align: center;
+    padding: 40px 0;
 }
 
 .btn:hover {
@@ -84,7 +88,7 @@ border-radius: 2px;
 
 /* Header */
 header {
-background-color: white;
+
 box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 position: sticky;
 top: 0;
@@ -135,7 +139,7 @@ cursor: pointer;
 /* Hero Section */
 .hero {
 background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-color: white;
+
 padding: 100px 0;
 text-align: center;
 }
@@ -537,7 +541,7 @@ nav ul li {
         
         /* Header */
         header {
-            background-color: white;
+            
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   
         }
@@ -939,4 +943,209 @@ nav ul {
                 display: none;
             }
         }
+/* ------------------------------------------- */
+/* ==== COLORES POR ÁREA (IMPLEMENTACIÓN SOLICITADA) ==== */
+/* ------------------------------------------- */
 
+/* Definición de variables de color por área */
+.area-ingenieria { --area-color-main: #3498db; --area-color-dark: #2980b9; } /* Azul */
+.area-ciencias-salud { --area-color-main: #a2e83e; --area-color-dark: #7bc043; } /* Verde Limón */
+.area-ciencias-social { --area-color-main: #8e44ad; --area-color-dark: #7d3c98; } /* Púrpura */
+.area-artes-humanidades { --area-color-main: #e67e22; --area-color-dark: #d35400; } /* Naranja */
+
+/* Aplicar el color de fondo con gradiente al Hero de cada página de carrera */
+.area-ingenieria .carrera-hero, 
+.area-ciencias-salud .carrera-hero, 
+.area-ciencias-social .carrera-hero, 
+.area-artes-humanidades .carrera-hero { 
+    background: linear-gradient(135deg, var(--area-color-main) 0%, var(--area-color-dark) 100%);
+    color:#ffffff;
+    text-align: center;
+}
+
+/* Aplicar color de área a botones en páginas de carrera (incluye .btn y .btn-back) */
+/* Uso de !important para asegurar la prevalencia sobre los estilos genéricos como .btn */
+.area-ingenieria .btn, .area-ingenieria .btn-back,
+.area-ciencias-salud .btn, .area-ciencias-salud .btn-back,
+.area-ciencias-social .btn, .area-ciencias-social .btn-back,
+.area-artes-humanidades .btn, .area-artes-humanidades .btn-back {
+    background-color: var(--area-color-main) !important;
+    
+}
+
+/* Efecto hover para botones */
+.area-ingenieria .btn:hover, .area-ciencias-salud .btn:hover, .area-ciencias-social .btn:hover, .area-artes-humanidades .btn:hover,
+.area-ingenieria .btn-back:hover, .area-ciencias-salud .btn-back:hover, .area-ciencias-social .btn-back:hover, .area-artes-humanidades .btn-back:hover {
+    background-color: var(--area-color-dark) !important;
+    filter: none; /* Quitamos el filtro genérico de brillo si existe */
+}
+
+/* Estilos para las tarjetas de carreras en index.html (Borde inferior de color) */
+.carrera-card-ingenieria { border-bottom-color: #3498db; }
+.carrera-card-salud { border-bottom-color: #a2e83e; }
+.carrera-card-social { border-bottom-color: #8e44ad; }
+.carrera-card-humanidades { border-bottom-color: #e67e22; }
+
+/* Aplicar color de área a los botones de las tarjetas en index.html */
+/* Esto se aplica a los botones de las tarjetas para que usen el color del área */
+.carrera-card-ingenieria .btn, .carrera-card-ingenieria .btn-accent { background-color: #3498db !important; }
+.carrera-card-salud .btn, .carrera-card-salud .btn-accent { background-color: #a2e83e !important; }
+.carrera-card-social .btn, .carrera-card-social .btn-accent { background-color: #8e44ad !important; }
+.carrera-card-humanidades .btn, .carrera-card-humanidades .btn-accent { background-color: #e67e22 !important; }
+
+ /* FORMATO Y DISEÑO AL CONTENIDO DE AREAS DE CARRERA */
+ .career-content {
+    display: flex;
+    gap: 40px;
+    margin: 40px 0;
+    align-items: flex-start; /* Alinea los elementos al inicio */
+    padding: 0 15px; /* Asegura padding en los bordes */
+}
+
+/* Estilos de la Imagen Principal */
+.career-image {
+    flex: 0 0 40%; /* La imagen ocupa el 40% del ancho */
+    max-width: 40%;
+}
+
+.career-image img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Estilos de la Información de la Carrera */
+.career-info {
+    flex: 1; /* El contenido ocupa el espacio restante */
+}
+
+.info-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    /* Borde lateral de color de área para destacar */
+    border-left: 5px solid var(--area-color-main); 
+    background-color: #f9f9f9;
+    border-radius: 4px;
+}
+
+.info-section h2 {
+    color: var(--area-color-dark);
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+/* Sección de Universidades */
+.universities {
+    padding: 40px 0;
+    text-align: center; 
+}
+
+.university-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.university-card {
+    padding: 25px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease-out;
+    justify-content: space-between;
+}
+
+.university-card h3 {
+    color: var(--area-color-dark);
+    margin-bottom: 10px;
+}
+
+/* Responsive para la vista de carrera */
+@media (max-width: 992px) {
+    /* En tabletas, la imagen toma menos espacio */
+    .career-image {
+        flex: 0 0 35%;
+        max-width: 35%;
+    }
+}
+
+@media (max-width: 768px) {
+    /* En móviles, la columna desaparece y se apilan */
+    .career-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .career-image {
+        max-width: 100%;
+    }
+    .career-image img {
+        height: 300px;
+    }
+}
+
+        /* ======== CARRUSEL ======== */
+.carousel-section {
+    text-align: center;
+    margin: 80px 0;
+}
+
+.carousel {
+    position: relative;
+    width: 70%;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    position: relative;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    padding: 15px 25px;
+    border-radius: 8px;
+    text-align: left;
+    max-width: 70%;
+}
+
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.indicator {
+    width: 14px;
+    height: 14px;
+    background-color: #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.indicator.active {
+    background-color: var(--secondary-color);
+    transform: scale(1.2);
+}
