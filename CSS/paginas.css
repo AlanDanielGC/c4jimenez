@@ -1,0 +1,144 @@
+.area-ingenieria {
+    --area-color-main: #3498db;
+    --area-color-dark: #2980b9;
+}
+.area-ciencias-salud {
+    --area-color-main: #a2e83e;
+    --area-color-dark: #7bc043;
+}
+.area-ciencias-social {
+    --area-color-main: #8e44ad;
+    --area-color-dark: #7d3c98;
+}
+.area-artes-humanidades {
+    --area-color-main: #e67e22;
+    --area-color-dark: #d35400;
+}
+
+.carrera-hero {
+    background: linear-gradient(135deg, var(--area-color-main) 0%, var(--area-color-dark) 100%);
+    color: #ffffff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+/* REGLAS CORREGIDAS (Reemplaza en paginas.css) */
+.carrera-hero {
+    background: linear-gradient(135deg, var(--area-color-main) 0%, var(--area-color-dark) 100%);
+    color: #ffffff;
+    padding: 60px 0; /* Ajusta el espacio vertical */
+    text-align: center;
+}
+
+.carrera-hero .container {
+    /* Este contenedor se asegura que el texto no se vaya a los bordes */
+    max-width: 900px; 
+    margin: 0 auto;
+}
+
+.carrera-hero h1 {
+    font-size: 2.8rem; /* Un poco más grande para más impacto */
+    margin-bottom: 20px;
+}
+
+.carrera-hero h2 {
+    font-size: 1.4rem; /* Ligeramente más grande */
+    font-weight: 300; /* Más ligero para contraste */
+    line-height: 1.5;
+}
+
+.area-ingenieria .btn,
+.area-ciencias-salud .btn,
+.area-ciencias-social .btn,
+.area-artes-humanidades .btn {
+    background-color: var(--area-color-main) !important;
+}
+
+.area-ingenieria .btn:hover,
+.area-ciencias-salud .btn:hover,
+.area-ciencias-social .btn:hover,
+.area-artes-humanidades .btn:hover {
+    background-color: var(--area-color-dark) !important;
+}
+
+.carrera-card-ingenieria { border-bottom: 4px solid #3498db; }
+.carrera-card-salud { border-bottom: 4px solid #a2e83e; }
+.carrera-card-social { border-bottom: 4px solid #8e44ad; }
+.carrera-card-humanidades { border-bottom: 4px solid #e67e22; }
+
+.carrera-card-ingenieria .btn { background-color: #3498db !important; }
+.carrera-card-salud .btn { background-color: #a2e83e !important; }
+.carrera-card-social .btn { background-color: #8e44ad !important; }
+.carrera-card-humanidades .btn { background-color: #e67e22 !important; }
+
+.career-content {
+    display: flex;
+    gap: 40px;
+    margin: 40px 0;
+    align-items: flex-start;
+    padding: 0 15px;
+}
+
+.career-image {
+    flex: 0 0 40%;
+    max-width: 40%;
+}
+
+.career-image img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.career-info {
+    flex: 1;
+}
+
+.info-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    border-left: 5px solid var(--area-color-main);
+    background-color: #f9f9f9;
+    border-radius: 4px;
+}
+
+.info-section h2 {
+    color: var(--area-color-dark);
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.universities {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.university-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.university-card {
+    padding: 25px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.university-card h3 {
+    color: var(--area-color-dark);
+    margin-bottom: 10px;
+}
+
+.university-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}

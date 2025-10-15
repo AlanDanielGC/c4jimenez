@@ -81,6 +81,41 @@ function mostrarPregunta() {
     form.appendChild(document.createElement("br"));
   }
   contenedor.appendChild(form);
+
+
+  const progreso = ((indice + 1) / preguntas.length) * 100;
+
+
+  let html = `
+      <div class="progress-bar-container">
+          <div class="progress-bar-inner" style="width: ${progreso}%;"></div>
+      </div>
+
+      <div class="test-card">
+          <div class="pregunta-header">
+              <span class="pregunta-numero">Pregunta ${indice + 1} de ${preguntas.length}</span>
+              <h3 class="pregunta-texto">${texto}</h3>
+          </div>
+          <form class="opciones-form">
+  `;
+
+  let i = 0;
+  for (let op of opciones) {
+      const opcionId = `opcion-${i}`;
+      html += `
+          <div class="opcion-container">
+              <input type="radio" id="${opcionId}" name="respuesta" value="${op.getAttribute("valor")}">
+              <label for="${opcionId}" class="opcion-label">${op.textContent}</label>
+          </div>
+      `;
+      i++;
+  }
+
+  html += `
+          </form>
+      </div>
+  `;
+  contenedor.innerHTML = html;
 }
 
 /**
@@ -113,34 +148,61 @@ function siguientePregunta() {
  * Calcula el top 3 de áreas y muestra los resultados finales al usuario.
  */
 function mostrarResultado() {
-  const contenedor = document.getElementById("contenedor");
-  document.getElementById("siguiente").style.display = "none"; // Oculta el botón "Siguiente".
+    const contenedor = document.getElementById("contenedor");
+    document.getElementById("siguiente").style.display = "none";
 
-  // Convierte el objeto de resultados en un array [clave, valor] y lo ordena de mayor a menor.
-  const sortedResults = Object.entries(resultados).sort((a, b) => b[1] - a[1]);
+    // Mapeo de áreas a sus URLs y clases de color para los botones y barras
+    const areaInfo = {
+        ingenieria: { url: 'ingenieria.html', clase: 'area-ingenieria' },
+        humanidades: { url: 'ciencias_social.html', clase: 'area-ciencias-social' },
+        arte: { url: 'artes_humanidades.html', clase: 'area-artes-humanidades' }
+        // Si agregas más áreas, añádelas aquí.
+    };
+    
+    // Calcula la puntuación total para la barra de progreso
+    const puntuacionTotal = Object.values(resultados).reduce((sum, score) => sum + score, 0);
 
-  // Toma los 3 mejores resultados.
-  const topThree = sortedResults.slice(0, 3);
+    // Ordena los resultados de mayor a menor
+    const sortedResults = Object.entries(resultados).sort((a, b) => b[1] - a[1]);
 
-  // Construye el HTML final.
-  let html = `
-    <h2>¡Resultados del Test!</h2>
-    <p>Basado en tus respuestas, estas son las áreas que más se alinean con tus intereses:</p>
-    <ol>`;
-  
-  // Itera sobre el top 3 para crear una lista ordenada.
-  topThree.forEach(([area, score], index) => {
-    // Busca el nombre descriptivo en nuestro diccionario. Si no lo encuentra, usa el nombre original.
-    const nombreArea = nombresDeAreas[area] || area.charAt(0).toUpperCase() + area.slice(1);
-    html += `<li><strong>${index + 1}. ${nombreArea}</strong> (Puntuación: ${score})</li>`;
-  });
+    // Extrae el resultado principal y los secundarios
+    const [topArea, topScore] = sortedResults[0];
+    const otherResults = sortedResults.slice(1);
 
-  html += `
-    </ol>
-    <p>Te recomendamos usar estos resultados como guía para explorar las carreras disponibles. ¡Mucho éxito!</p>
-    <button class="btn" onclick="location.reload()">Realizar Test de Nuevo</button>
-  `;
+    // Construye el HTML final
+    let html = `
+    <div class="results-card">
+        <h2>¡Resultados del Test!</h2>
+        <p>Basado en tus respuestas, tu principal área de interés es:</p>
 
-  // Muestra el resultado en la página.
-  contenedor.innerHTML = html;
+        <div class="top-result-card ${areaInfo[topArea]?.clase || ''}">
+            <h3 class="result-area-name">${nombresDeAreas[topArea] || topArea}</h3>
+            <div class="result-score-bar">
+                <div class="result-score-bar-inner" style="width: ${(topScore / puntuacionTotal * 100) || 100}%;">
+                    <span>Puntuación: ${topScore}</span>
+                </div>
+            </div>
+            <a href="${areaInfo[topArea]?.url || '#'}" class="btn btn-explore">Explorar Carreras</a>
+        </div>
+
+        <h4>Otras áreas de interés:</h4>
+        <div class="other-results-list">
+    `;
+
+    otherResults.forEach(([area, score]) => {
+        html += `
+            <a href="${areaInfo[area]?.url || '#'}" class="other-result-item">
+                <span>${nombresDeAreas[area] || area}</span>
+                <span class="other-score">Puntuación: ${score}</span>
+            </a>
+        `;
+    });
+
+    html += `
+        </div>
+        <button class="btn btn-restart" onclick="location.reload()">Realizar Test de Nuevo</button>
+    </div>
+    `;
+
+    contenedor.innerHTML = html;
 }
