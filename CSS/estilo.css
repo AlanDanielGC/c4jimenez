@@ -1065,7 +1065,7 @@ nav ul {
 
 /* Definición de variables de color por área */
 .area-ingenieria { --area-color-main: #3498db; --area-color-dark: #2980b9; } /* Azul */
-.area-ciencias-salud { --area-color-main: #a2e83e; --area-color-dark: #7bc043; } /* Verde Limón */
+.area-ciencias-salud { --area-color-main: #84bf32; --area-color-dark: #669341; } /* Verde Limón */
 .area-ciencias-social { --area-color-main: #8e44ad; --area-color-dark: #7d3c98; } /* Púrpura */
 .area-artes-humanidades { --area-color-main: #e67e22; --area-color-dark: #d35400; } /* Naranja */
 
