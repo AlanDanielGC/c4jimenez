@@ -4,12 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Apunta - T | Test Vocacional</title>
-  <!-- Se reutiliza el mismo CSS para mantener coherencia visual -->
   <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
-  <!-- ===== HEADER ===== -->
-  <!-- Mismo encabezado que en index.html -->
+
   <header>
     <div class="container header-container">
       <a href="index.html" class="logo">Apunta<span> - T</span></a>
@@ -26,7 +24,7 @@
     </div>
   </header>
 
-  <!-- ===== TEST SECTION ===== -->
+  <!-- ===== TEST  ===== -->
   <section class="section" id="test-vocacional">
     <div class="container test-container">
       <h2 class="section-title">Test Vocacional</h2>
@@ -34,37 +32,27 @@
         Responde las siguientes preguntas con sinceridad para descubrir tus intereses y habilidades profesionales.
       </p>
 
-      <!-- Contenedor dinámico del test -->
       <div id="contenedor" class="test-content">
-        <!-- Aquí el script test.js insertará las preguntas -->
       </div>
 
-      <!-- Botones de control -->
       <div class="test-buttons">
         <button id="siguiente" class="btn btn-accent">Siguiente</button>
       </div>
 
-      <!-- COMENTARIOS:
-        - Puedes añadir un botón “Anterior” si tu test.js lo soporta.
-        - Usa clases .btn o .btn-accent para mantener el estilo de los botones del sitio.
-      -->
+    
     </div>
   </section>
 
-  <!-- ===== RESULTADOS SECTION ===== -->
-  <!-- Esta parte puede mostrarse al final del test -->
+
   <section class="section" id="resultados" style="display:none;">
     <div class="container resultados-container">
       <h2 class="section-title">Tus Resultados</h2>
       <div id="resultadoTexto">
-        <!-- Aquí se mostrarán los resultados generados por test.js -->
       </div>
       <a href="index.html" class="btn">Volver al inicio</a>
     </div>
   </section>
 
-  <!-- ===== FOOTER ===== -->
-  <!-- Se copia el mismo footer para coherencia visual -->
   <footer>
     <div class="container">
       <div class="footer-container">
@@ -112,19 +100,14 @@
     </div>
   </footer>
 
-  <!-- ===== JS SCRIPTS ===== -->
   <script src="js/test.js"></script>
 
   <script>
-    // ===== Menú móvil =====
     document.querySelector('.mobile-menu').addEventListener('click', function() {
       document.querySelector('nav ul').classList.toggle('active');
     });
 
-    // COMENTARIOS:
-    // - Puedes agregar una barra de progreso aquí usando CSS y JS.
-    // - Considera animaciones suaves al cambiar de pregunta.
-    // - Para mantener la coherencia visual, usa clases de la página principal.
+
   </script>
 </body>
 </html>
