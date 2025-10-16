@@ -28,6 +28,9 @@
 
     <!-- Hero Section -->
     <section class="hero" id="inicio">
+        <video autoplay muted loop playsinline class="hero-video-bg">
+            <source src="Assets/video-fondo.mp4" type="video/mp4">
+        </video>
         <div class="container">
             <h1>Encuentra tu camino profesional</h1>
             <p>Descubre tu vocación con nuestro test vocacional especializado y encuentra la carrera universitaria perfecta para ti.</p>
@@ -36,7 +39,7 @@
     </section>
 
     <!-- Orientación Section -->
-    <section class="section" id="orientacion">
+    <section class="section" id="orientacion"
         <div class="container">
             <h2 class="section-title">Orientación Vocacional</h2>
             <div class="orientacion-cards">
@@ -69,32 +72,42 @@
     <section class="section test" id="test">
         <div class="container test-container">
             <h2 class="section-title">Test Vocacional</h2>
-            <p>Nuestro test vocacional está diseñado para ayudarte a descubrir tus intereses, habilidades y preferencias profesionales.</p>
-            
-            <div class="test-steps">
-                <div class="test-step">
-                    <div class="step-number">1</div>
-                    <h3>Regístrate</h3>
-                    <p>Crea tu cuenta gratuita para comenzar el proceso.</p>
+            <p class="test-desc">Descubre tus intereses, habilidades y preferencias profesionales con nuestro test interactivo y visual.</p>
+            <div class="test-cards-modern">
+                <div class="test-card">
+                    <div class="test-card-icon" style="background: #6C63FF;">
+                        <span>📝</span>
+                    </div>
+                    <div class="test-card-content">
+                        <h3>Explora</h3>
+                        <p>Ten curiosidad por tu futuro y dejanos ayudarte.</p>
+                    </div>
                 </div>
-                <div class="test-step">
-                    <div class="step-number">2</div>
-                    <h3>Responde</h3>
-                    <p>Completa nuestro cuestionario de intereses y habilidades.</p>
+                <div class="test-card">
+                    <div class="test-card-icon" style="background: #00BFA6;">
+                        <span>✅</span>
+                    </div>
+                    <div class="test-card-content">
+                        <h3>Responde</h3>
+                        <p>Completa el cuestionario interactivo de intereses y habilidades.</p>
+                    </div>
                 </div>
-                <div class="test-step">
-                    <div class="step-number">3</div>
-                    <h3>Analiza</h3>
-                    <p>Recibe un informe detallado con tus resultados.</p>
+                <div class="test-card">
+                    <div class="test-card-icon" style="background: #FFB300;">
+                        <span>📊</span>
+                    </div>
+                    <div class="test-card-content">
+                        <h3>Analiza</h3>
+                        <p>Recibe un informe visual y detallado con tus resultados y sugerencias de carrera.</p>
+                    </div>
                 </div>
-            </div>         
-            <a href="#" class="btn" id="empezarTest">Comenzar Test</a>
+            </div>
+            <a href="#" class="btn btn-accent test-btn-modern" id="empezarTest">Comenzar Test</a>
             <script>
                 document.getElementById("empezarTest").addEventListener("click", function() {
-                // Redirige a la página del test
-                window.location.href = "test.html";
+                    window.location.href = "test.html";
                 });
-             </script>
+            </script>
         </div>
     </section>
 
