@@ -85,21 +85,29 @@ function mostrarPregunta() {
 
   let i = 0;
   for (let op of opciones) {
-      const opcionId = `opcion-${i}`;
-      html += `
-          <div class="opcion-container">
-              <input type="radio" id="${opcionId}" name="respuesta" value="${op.getAttribute("valor")}">
-              <label for="${opcionId}" class="opcion-label">${op.textContent}</label>
-          </div>
-      `;
-      i++;
+    const opcionId = `opcion-${i}`;
+    html += `
+      <div class="opcion-container">
+        <input type="radio" id="${opcionId}" name="respuesta" value="${op.getAttribute("valor")}" onclick="siguientePregunta()">
+        <label for="${opcionId}" class="opcion-label">${op.textContent}</label>
+      </div>
+    `;
+    i++;
   }
 
   html += `
-          </form>
-      </div>
+      </form>
+    </div>
   `;
-  contenedor.innerHTML = html;
+  contenedor.style.transition = "opacity 0.35s";
+  contenedor.style.opacity = 0;
+  setTimeout(() => {
+    contenedor.innerHTML = html;
+    contenedor.style.opacity = 1;
+    
+    const btnSiguiente = document.getElementById("siguiente");
+    if (btnSiguiente) btnSiguiente.style.display = "none";
+  }, 350);
 }
 
 
@@ -125,7 +133,8 @@ function siguientePregunta() {
 
 function mostrarResultado() {
     const contenedor = document.getElementById("contenedor");
-    document.getElementById("siguiente").style.display = "none";
+  const btnSiguiente = document.getElementById("siguiente");
+  if (btnSiguiente) btnSiguiente.style.display = "none";
 
     const areaInfo = {
         ingenieria: { url: 'ingenieria.html', clase: 'area-ingenieria' },
