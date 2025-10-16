@@ -1462,3 +1462,19 @@ nav ul {
 .btn-restart:hover {
     background-color: #5a6268;
 }
+
+#hedHum{
+    color: #e07118;
+}
+
+#headCiencia{
+    color: #7fbd28;
+}
+
+#headSocial{
+    color: #8b43a9;
+}
+
+#headIng{
+    color: #3498db;
+}
