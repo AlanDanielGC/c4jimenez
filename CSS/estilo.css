@@ -1150,3 +1150,199 @@ nav ul {
     transform: scale(1.2);
 }
 
+/* ============================================= */
+/* ESTILOS PARA EL TEST VOCACIONAL Y RESULTADOS  */
+/* ============================================= */
+
+.test-content {
+    max-width: 700px;
+    width: 100%; /* Asegura que el contenedor tenga un ancho fijo */
+    margin: 20px auto 0;
+}
+
+/* --- Barra de Progreso --- */
+.progress-bar-container {
+    height: 10px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.progress-bar-inner {
+    height: 100%;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    transition: width 0.4s ease-in-out;
+}
+
+/* --- Tarjeta de Pregunta --- */
+.test-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    padding: 30px 40px;
+    transition: all 0.3s ease;
+}
+
+.pregunta-header {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.pregunta-numero {
+    display: block;
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+}
+
+.pregunta-texto {
+    font-size: 1.5rem;
+    color: #333;
+    line-height: 1.4;
+}
+
+/* --- Opciones de Respuesta --- */
+.opciones-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.opcion-container input[type="radio"] {
+    display: none;
+}
+
+.opcion-label {
+    display: block;
+    padding: 15px 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    font-weight: 500;
+}
+
+.opcion-label:hover {
+    border-color: var(--secondary-color);
+    background-color: #fdf6fd;
+}
+
+.opcion-container input[type="radio"]:checked + .opcion-label {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
+    box-shadow: 0 4px 10px rgba(86, 46, 82, 0.3);
+    transform: scale(1.02);
+}
+
+/* ============================================= */
+/* ESTILOS PARA LA PANTALLA DE RESULTADOS        */
+/* ============================================= */
+
+.results-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    padding: 30px 40px;
+    text-align: center;
+}
+
+.results-card h2 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.results-card > p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.top-result-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-top: 5px solid;
+    border-color: var(--area-color-main, var(--secondary-color));
+}
+
+.result-area-name {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: var(--area-color-dark, var(--primary-color));
+}
+
+.result-score-bar {
+    height: 30px;
+    background-color: #e9ecef;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+
+.result-score-bar-inner {
+    height: 100%;
+    background-color: var(--area-color-main, var(--secondary-color));
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: width 0.8s ease-out;
+}
+
+.btn-explore {
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    width: 100%;
+    max-width: 300px;
+}
+
+.results-card h4 {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+.other-results-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+    margin: 0 auto 30px;
+}
+
+.other-result-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    font-weight: 500;
+}
+
+.other-result-item:hover {
+    background-color: #e9ecef;
+    transform: translateX(5px);
+}
+
+.other-score {
+    color: #555;
+    font-weight: bold;
+}
+
+.btn-restart {
+    background-color: #6c757d;
+}
+
+.btn-restart:hover {
+    background-color: #5a6268;
+}
